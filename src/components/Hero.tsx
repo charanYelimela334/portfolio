@@ -55,10 +55,10 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
         >
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
-            Hi, I'm <span className="text-primary">Charan Yelimela</span>
+            Hi, I&apos;m <span className="text-primary">Charan Yelimela</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-medium text-gray-800 mb-6 flex">
-            I'm a <span ref={typingRef} className="text-accent ml-2"></span>
+            I&apos;m a <span ref={typingRef} className="text-accent ml-2"></span>
             <span className="animate-blink ml-1">|</span>
           </h2>
           <p className="text-lg mb-8 text-gray-700 max-w-lg">

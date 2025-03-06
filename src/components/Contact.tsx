@@ -12,7 +12,6 @@ export default function Contact() {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<null | 'success' | 'error'>(null);
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -28,7 +27,6 @@ export default function Contact() {
     
     setTimeout(() => {
       setIsSubmitting(false);
-      setSubmitStatus('success');
       
       setFormData({
         name: '',
@@ -36,10 +34,6 @@ export default function Contact() {
         subject: '',
         message: ''
       });
-      
-      setTimeout(() => {
-        setSubmitStatus(null);
-      }, 5000);
     }, 1500);
   };
   

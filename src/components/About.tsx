@@ -46,15 +46,15 @@ export default function About() {
           >
             <h3 className="text-2xl font-semibold text-primary">Who am I?</h3>
             <p className="text-lg text-gray-700">
-              I'm Charan Yelimela, a Computer Science and Information Technology student at the Institute of Aeronautical Engineering in Telangana, India. 
-              I'm passionate about Python development, Machine Learning, and Data Analysis.
+              I&apos;m Charan Yelimela, a Computer Science and Information Technology student at the Institute of Aeronautical Engineering in Telangana, India. 
+              I&apos;m passionate about Python development, Machine Learning, and Data Analysis.
             </p>
             <p className="text-lg text-gray-700">
               My journey in technology began with Python programming, which led me to explore the fascinating world of Machine Learning and Data Science. 
               I enjoy solving complex problems and creating data-driven solutions.
             </p>
             <p className="text-lg text-gray-700">
-              When I'm not coding, I'm actively participating in tech communities, working on personal projects, 
+              When I&apos;m not coding, I&apos;m actively participating in tech communities, working on personal projects, 
               and continuously expanding my knowledge in the ever-evolving field of technology.
             </p>
           </motion.div>

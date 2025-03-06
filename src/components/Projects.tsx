@@ -50,7 +50,7 @@ export default function Projects() {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-neutral-900">Projects</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
           <p className="mt-4 text-neutral-600 max-w-2xl mx-auto">
-            Here are some of the projects I've worked on, showcasing my skills in Python, 
+            Here are some of the projects I&apos;ve worked on, showcasing my skills in Python, 
             Machine Learning, and Data Analysis.
           </p>
         </div>
