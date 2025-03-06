@@ -11,7 +11,6 @@ export default function Contact() {
     message: ''
   });
   
-  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<null | 'success' | 'error'>(null);
   
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -24,7 +23,6 @@ export default function Contact() {
   
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitting(true);
 
     try {
       const response = await fetch('https://formspree.io/f/meoajapg', {
@@ -46,10 +44,9 @@ export default function Contact() {
       } else {
         setSubmitStatus('error');
       }
-    } catch (error) {
+    } catch {
       setSubmitStatus('error');
     } finally {
-      setIsSubmitting(false);
       setTimeout(() => setSubmitStatus(null), 5000);
     }
   };
@@ -163,61 +160,62 @@ export default function Contact() {
               <input type="hidden" name="_captcha" value="false" />
 
               <div className="mb-4">
-                <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name</label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
+                <label htmlFor="name" className="block text-gray-700 mb-2">Name</label>
+                <input 
+                  type="text" 
+                  id="name" 
+                  name="name" 
+                  value={formData.name} 
+                  onChange={handleChange} 
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" 
+                  placeholder="John Doe" 
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
                 />
               </div>
-
+              
               <div className="mb-4">
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
+                <label htmlFor="email" className="block text-gray-700 mb-2">Email</label>
+                <input 
+                  type="email" 
+                  id="email" 
+                  name="email" 
+                  value={formData.email} 
+                  onChange={handleChange} 
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" 
+                  placeholder="john@example.com" 
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
                 />
               </div>
-
+              
               <div className="mb-4">
-                <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">Subject</label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  value={formData.subject}
-                  onChange={handleChange}
+                <label htmlFor="subject" className="block text-gray-700 mb-2">Subject</label>
+                <input 
+                  type="text" 
+                  id="subject" 
+                  name="subject" 
+                  value={formData.subject} 
+                  onChange={handleChange} 
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" 
+                  placeholder="Job Opportunity" 
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
                 />
               </div>
-
+              
               <div className="mb-4">
-                <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
+                <label htmlFor="message" className="block text-gray-700 mb-2">Message</label>
+                <textarea 
+                  id="message" 
+                  name="message" 
+                  value={formData.message} 
+                  onChange={handleChange} 
+                  rows={4} 
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-primary focus:border-primary" 
+                  placeholder="Your message here..." 
                   required
-                  className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary"
-                  rows={5}
-                />
+                ></textarea>
               </div>
 
-              <button
-                type="submit"
-                className="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-accent transition-colors"
-              >
+              <button type="submit" className="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-accent transition">
                 Send Message
               </button>
 
