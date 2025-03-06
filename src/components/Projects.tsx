@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 // Define projects data
 const projects = [
@@ -83,6 +84,13 @@ export default function Projects() {
             key={activeProject.id + "-image"}
             className="bg-neutral-100 rounded-lg overflow-hidden shadow-lg aspect-video relative"
           >
+            <Image
+              src={activeProject.image}
+              alt={activeProject.title}
+              layout="fill"
+              objectFit="cover"
+              className="absolute inset-0"
+            />
             <div className="absolute inset-0 bg-gradient-to-br from-primary/70 to-accent/70 flex items-center justify-center text-white text-xl font-bold">
               {activeProject.title}
             </div>
