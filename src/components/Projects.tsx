@@ -34,7 +34,7 @@ const projects = [
       'Model training and evaluation'
     ],
     image: '/project-fakenews.jpg',
-    github: '#',
+    github: 'https://github.com/charanYelimela334/Fake-News-Detection',
     demo: '#',
     year: 2023
   }
