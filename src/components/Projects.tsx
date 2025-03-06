@@ -17,7 +17,7 @@ const projects = [
       'User-friendly interface',
       'Database integration'
     ],
-    image: '/project-attendance.jpg',
+    image: '/images/project-attendance.jpg',
     github: 'https://github.com/charanYelimela334/Attendance-Management-System-using-Face-Recognition.git',
     demo: '#',
     year: 2024
