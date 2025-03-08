@@ -68,7 +68,7 @@ export default function Hero() {
           
           <div className="flex space-x-4 mb-8">
             <a 
-              href="/images/Charan Yelimela.pdf" 
+              href="/images/Charan_Yelimela.pdf" 
               download 
               className="bg-primary hover:bg-accent text-white px-6 py-3 rounded-full transition-colors"
               aria-label="Download my resume"
