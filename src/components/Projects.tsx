@@ -87,9 +87,8 @@ export default function Projects() {
             <Image
               src={activeProject.image}
               alt={activeProject.title}
-              layout="fill"
-              objectFit="cover"
-              className="absolute inset-0"
+              fill
+              className="absolute inset-0 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-primary/70 to-accent/70 flex items-center justify-center text-white text-xl font-bold">
               {activeProject.title}
