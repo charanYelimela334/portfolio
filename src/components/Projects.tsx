@@ -34,7 +34,7 @@ const projects = [
       'Text analysis and feature extraction',
       'Model training and evaluation'
     ],
-    image: '/project-fakenews.jpg',
+    image: '/images/fake news.jpg',
     github: 'https://github.com/charanYelimela334/Fake-News-Detection',
     demo: '#',
     year: 2023
