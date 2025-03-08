@@ -70,7 +70,7 @@ export default function Hero() {
             <a 
               href="/images/Charan_Yelimela.pdf" 
               download 
-              className="bg-primary hover:bg-accent text-white px-6 py-3 rounded-full transition-colors"
+              className="border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-full transition-colors"
               aria-label="Download my resume"
             >
               Download My Resume
