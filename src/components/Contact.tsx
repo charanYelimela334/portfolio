@@ -162,6 +162,18 @@ export default function Contact() {
               )}
             </form>
           </motion.div>
+
+          {/* LinkedIn Link */}
+          <div className="flex justify-center items-center">
+            <a
+              href="https://www.linkedin.com/in/charanyelimela/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-accent transition-colors text-xl"
+            >
+              Connect with me on LinkedIn
+            </a>
+          </div>
         </div>
       </div>
     </section>
