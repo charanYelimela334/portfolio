@@ -86,7 +86,7 @@ export default function Projects() {
           >
             <Image
               src={activeProject.image}
-              alt={activeProject.title}
+              alt=""
               fill
               className="absolute inset-0 object-cover"
             />
