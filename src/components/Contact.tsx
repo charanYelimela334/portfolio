@@ -24,13 +24,18 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const form = new FormData();
+    form.append('name', formData.name);
+    form.append('email', formData.email);
+    form.append('subject', formData.subject);
+    form.append('message', formData.message);
+    form.append('_next', 'https://yourwebsite.com/thank-you'); // Redirect after success
+    form.append('_captcha', 'false'); // Disables reCAPTCHA
+
     try {
-      const response = await fetch('https://formspree.io/f/meoajapg', {
+      const response = await fetch('https://formsubmit.co/22951A3317@iare.ac.in', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(formData)
+        body: form
       });
 
       if (response.ok) {
