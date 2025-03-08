@@ -91,7 +91,7 @@ export default function Projects() {
               className="absolute inset-0 object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-br from-primary/70 to-accent/70 flex items-center justify-center text-white text-xl font-bold">
-              {activeProject.title}
+              {/* Removed activeProject.title */}
             </div>
           </motion.div>
           
