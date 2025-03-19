@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
+import { SpeedInsights } from "@vercel/speed-insights/next"; // ✅ Import SpeedInsights
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,8 +16,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Charan Yelimela | Portfolio",
-  description: "Personal portfolio of Charan Yelimela - Python, Machine Learning, and Data Science Enthusiast",
-  keywords: ["Charan Yelimela", "Portfolio", "Python", "Machine Learning", "Data Science", "Developer"],
+  description:
+    "Personal portfolio of Charan Yelimela - Python, Machine Learning, and Data Science Enthusiast",
+  keywords: [
+    "Charan Yelimela",
+    "Portfolio",
+    "Python",
+    "Machine Learning",
+    "Data Science",
+    "Developer",
+  ],
   authors: [{ name: "Charan Yelimela" }],
 };
 
@@ -49,6 +58,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <SpeedInsights /> {/* ✅ Add Speed Insights inside the <body> */}
       </body>
     </html>
   );
